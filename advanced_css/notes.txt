@@ -1,0 +1,17 @@
+Critical Render Path:
+  1) CSS is a render blocking file.
+  2) Font files you will also need to wait to render.
+
+Flexbox:
+  1) Hardest thing to do: Making sure that we have our items displayed in the location that we want.
+  2) Probably the most efficient and elegant way to solve website layout. 
+
+CSS3:
+  1) Latest evolution of CSS.
+  2) You want to make sure that each browser has implemented the new features.
+  3) Check at https://www.w3schools.com/cssref/css3_browsersupport.php
+  4) Sometimes browsers have their own margins.
+
+Responsive UI:
+  1) Everything looks good no matter what size.
+  2) Should be a priority when building websites.

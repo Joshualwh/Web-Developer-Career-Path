@@ -1,0 +1,32 @@
+Backend Basics:
+  1) Work with servers and databases.
+  2) A server is just a computer listening to HTTP connections.
+  3) Old: LAMP STACK, Hostgator.
+  4) A server needs a server software.
+  5) New Stack: Application server.
+    - Node Server
+      - Node.js
+      - Express.js
+    - Database
+      - PostgreSQL
+      - MongoDB
+  6) In big companies, they use load balancer and needs multiple Node server.
+  7) Main goal is to get a response back asap when a request is made from frontend.
+
+Introduction to APIs:
+  1) Application Programming Interface.
+  2) Allows machines to communicate, share data.
+  3) Fetch is an API.
+  4) Similar to the waiter in the restaurant.
+  5) People usually build API for business reasons.
+  6) JSON format is the standard!
+  7) Not only JSON, XML is still used as well.
+  8) Procedure:
+    - Fetch the resource.
+    - Get the json.
+    - Convert to objects that we want.
+  9) Stripe API:
+    - Incorporate payment into web.
+  10) For serious API, normally they charge for the service.
+    - They will give you an API key to be unique.
+  11) API is a tool for data communication.

@@ -1,0 +1,33 @@
+Career Of A Web Developer:
+  1) Type of work:
+    - Entrepreneurship
+    - Startups
+    - Freelance
+    - The Big Tech Companies
+    - Ad Agencies
+    - Remote work
+  2) 1st 2 months of learning will feel like an insurmountable obstacles.
+  3) It's about learning how to solve problems with the tools around you.
+  4) In demand developers and problem solvers not coders.
+
+What If I Don't Have Enough Experience?:
+  1) Apply to jobs that you feel you are underqualified for. So that you are able to learn!
+  2) Sometimes without a resume you are not able to get an interview.
+  3) There are many ways to gain experience.
+    - GitHub
+    - Website
+    - 1 ~ 2 Big Projects
+      - Instead of 30 small projects, work on big projects and complicated ones.
+    - Blog post
+    - Start some thing on you own!
+  4) ZTM Job Board
+
+New: DEVELOPER FUNDAMENTALS:
+  1) Rubber Duck method.
+  2) Stack Overflow to ask questions.
+  3) People pay us:
+    - Not to have all the answers.
+    - Help guide along the way.
+    - Figure out solutions.
+  4) Best way to retain information is to teach each other.
+

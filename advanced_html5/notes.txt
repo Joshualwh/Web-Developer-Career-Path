@@ -1,0 +1,42 @@
+HTML Forms:
+  1) <form></form>
+  2) input types:
+    - text
+    - email
+    - date
+    - radio
+    - checkbox
+    - submit
+    - reset
+    - password
+    - 
+  3) input type attributes:
+    - required
+    - name
+    - value
+    - minlength
+
+Submitting a Form:
+  1) Query strings:
+    - When you register some details, the details are sent to the back end.
+  2) For query strings to work, you need to have a name associated with the value.
+
+HTML Tags 3:
+  1) Comment: <!--  -->
+  2) Division: 
+    - Used to divide content.
+    - Block element.
+    - Wrap a form.
+    - Useful in CSS.
+    - Add styles and divide up content into each different sections.
+  3) Span:
+    - Same as div but an inline element.
+
+HTML vs HTML5:
+  1) HTML5 is the evolution where we improve user experience.
+  2) HTML5 doesn't affect any old website.
+  3) Everything is backwards compatible.
+  4) Semantic web is still fairly new.
+  5) Semantic elements might help with SEO better.
+    - Gives more meaning to the structure of a webpage.
+     

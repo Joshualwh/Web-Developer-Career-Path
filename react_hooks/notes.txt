@@ -1,0 +1,29 @@
+React Hooks:
+  1) One of the challenges: You always need to stay updated.
+  2) At 16.8 update: hooks.
+
+React Hooks 2:
+  1) Read the motivation: Why did they add this?
+    - Hard to reuse stateful logic.
+    - Classes confuse both people and machine.
+  
+React Hooks 4:
+  1) Hooks are a way for us to avoid using classes.
+  2) You can add state to a function.
+
+React Hooks 6:
+  1) State Hook.
+  2) Hooks are React specific not in the JS World.
+  3) Hook is a function that lets you hook into React features.
+
+React Hooks 7:
+  1) Effect Hook.
+  2) Ability to perform side effects from a function component.
+  3) You can tell React to skip applying the effect to avoid infinite loop of re-rendering.
+
+React Hooks 8:
+  1) Convert class components into state hook function components.
+
+React Hooks 9:
+  1) Understand what is the adoption strategy.
+  2) Hooks work side-by-side with existing code so you can adopt them gradually.

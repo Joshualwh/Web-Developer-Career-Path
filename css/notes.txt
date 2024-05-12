@@ -1,0 +1,53 @@
+Your First CSS:
+  1) Head contains information what the page needs.
+  2) Cascading Style Sheets.
+  3) Cascading: Takes last input.
+  4) There are total 3 ways to incorporate styles into HTML.
+    - Normal way (best way): 
+      - In <head>
+      - <link rel="stylesheet" href="style2.css">
+      - Separation of concerns.
+    - Inline element: 
+      - <header style="background-color: aliceblue;">
+    - In <head>:
+      - <style>
+          li {
+            background-color: purple;
+          }
+        </style>
+      - We don't do this because it may become difficult to maintain.
+
+CSS Properties:
+  1) Properties: Properties that we want to change within a web page.
+  2) rgb and rgba:
+    - rgba, a stands for alpha, sets the opacity. 0 - 1.
+  
+CSS Selectors:
+  1) Cascading Style Sheets at the most basic level indicates that the order of CSS rules matter.
+  2) ID is similar to class but can only use once.
+  3) * not used very often, symbolizes all elements.
+  4) element1 element2 {}:
+    - Select all element2 that are inside element1.
+  5) element1 > element2 {}:
+    - Select all element2 that have parent of element1.
+  6) element1 + element2 {}:
+    - Select any element2 that is exactly after an element1.
+  7) p:hover {}:
+    - It is default but change when hovered upon.
+  8) .webtext:last-child {}
+  9) .webtext:first-child {}
+  10) What seletors win out in the cascade depends on:
+      -Specificity
+      -Importance
+      -Source Order
+  11) Specificity calculator.
+
+Text and Font:
+  1) Fonts are information that each computer has but not equally distributed amongst everybody.
+  2) Google Fonts.
+
+px vs em vs rem:
+  1) em: We want the font size to be 5 times the containing element.
+  2) rem: In relation to the root element.
+  
+

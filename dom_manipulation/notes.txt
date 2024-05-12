@@ -1,0 +1,66 @@
+Document Object Model:
+  1) We can use Javascript to change HTML and CSS.
+  2) Browser creates DOM.
+  3) Why do we need DOM? To change the webpage itself (modify HTML and CSS).
+  4) Each browser has their own Javascript engines.
+  5) We use Javascript to talk to DOM.
+  6) Document parent object is window.
+
+DOM Selectors:
+  1) getElementsByTagName
+  2) getElementsByClassName
+  3) getElementById
+  4) querySelector
+    - Selects the first item that it finds.
+    - More powerful than first three.
+  5) querySelectorAll
+    - More powerful than first three.
+  6) Remember to check if the selectors are being used by all browsers.
+  7) getAttribute()
+    - can get anything.
+  8) setAttribute()
+    - Sets the particular attribute to another value.
+  9) Changing Styles 
+    - All elements on the webpage has a style property.
+    - style.{property} = ""
+    - Always remember we want to separate HTML, CSS and Javascript operations.
+  10) className
+  11) classList
+    - classList.add
+    - classList.remove
+    - classList.toggle
+      - Turn something on and off.
+  12) innerHTML
+    - DANGEROUS
+    - Change the inner words of HTML.
+  13) parentElement <-> children.
+  14) It is important to CACHE selectors in variables.
+
+DOM Events:
+  1) Use Javascript to listen to events and what the user does.
+  2) Keyboard Events and mouse events.
+  3) It's really easy for browser to grab ID instead!
+  4) Callback Functions:
+    - difference between:
+      - button.addEventListener("click", addListAfterClick);
+      - button.addEventListener("click", addListAfterClick());
+    - passing a reference to the function without running it.
+    - If () was added at the back, the function would have run from the start.
+
+Exercise: DOM Events
+  1) If you click on the list item, it toggles the .done class on and off.
+  2) Add buttons next to each list item to delete the item when clicked on its corresponding delete button.
+  3) BONUS: When adding a new list item, it automatically adds the delete button next to it (hint: be sure to check if new items are clickable too!)
+
+jQuery:
+  1) Was one of the most popular library.
+  2) To make DOM manipulation easier and compatible with all browsers.
+  3) jQuery made the code imperative.
+    - Imperative: You need to tell the program exactly what to do one by one.
+  4) React solves a huge problem of jQuery.
+    - Instead of imperative, it is declarative.
+
+DEVELOPER FUNDAMENTALS: V
+  1) innerHTML is susceptible to attacks called cross-site scripting.
+  2) Minimize the amount of DOM Manipulation and events for better performances.
+  3) 

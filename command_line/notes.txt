@@ -1,0 +1,26 @@
+Using The Terminal:
+  1) Very first method to communicate with computer, before there was GUI.
+  2) Common ways to access different computers around the world.
+  3) Access servers, databases etc.
+  4) ls
+    - list everything in the directory.
+  5) pwd
+    - present working directory.
+  6) cd
+  7) clear
+  8) open .
+    - Opens the folder that we are currently in.
+  9) mkdir name
+    - make directory of a new folder.
+  10) touch index.html
+    - creates a file of name index.html
+  11) open -a "Sublime Text" index.html
+    - -a stands for application, then application name, then file name.
+  12) mv index.html about.html
+    - change the name of index.html to about.html
+  13) rm about.html
+    - deletes the file about.html
+  14) rm -r webapp
+    - cannot use rm directly to delete a folder
+    - need to include -r
+  15) 

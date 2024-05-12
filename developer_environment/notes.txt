@@ -1,0 +1,11 @@
+Sublime Text (Optional, skipped):
+  1) Developer environment is really important!
+
+VS Code:
+  1) one of most popular coding env.
+
+Terminal:
+  1) Homebrew is a way to install anything from a web.
+  2) You can use iTerm (similar to terminal).
+
+

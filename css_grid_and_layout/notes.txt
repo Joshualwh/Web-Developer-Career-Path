@@ -1,0 +1,44 @@
+Section Overview:
+  1) How do I create a layout of a website?
+  2) Responsive design?
+
+CSS Grid vs Flexbox vs Bootstrap:
+  1) Flexbox, Bootstrap4, CSS Grid.
+  2) There's always a trade off, both work well together.
+  3) Flexbox is good for one dimensions. CSS Grid for 2 dimensions.
+  4) Bootstrap came at a time when Flexbox and CSS Grid was not available.
+
+CSS Grid 1:
+  1) grid-template-columns: Specify the number of columns to use.
+    - Instead of px and %, use fr(fraction) instead.
+    - px is not responsive, % will not include any gap px, fr will include and be responsive.
+    - grid-template-columns: repeat(3, 1fr);
+    - grid-template-columns: auto;
+  
+CSS Grid 2:
+  1) Define the rows as well.
+
+CSS Grid 3:
+  1) /* justify-items: stretch; */
+  2) grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); most commonly used pattern. Can make it completely responsive.
+
+CSS Grid 4:
+  1) grid-column-start: 1;
+    grid-column-end: 3;
+    or
+    grid-column: 1/3;
+  2) grid-column: 1/-1; all the way to the end.
+  3) grid-column: span 3;
+  4) You can do the same for row as well. grid-row: span 1/3;
+
+Exercise: CSS Layout
+  1) Most of the times the things that you will be asked is Javascript, logic and others.
+  2) Writing Javascript is where we begin.
+  3) Use both flexbox and CSS grid to accomplish.
+
+The Truth About CSS:
+  1) CSS is notoriously difficult and frustrating to learn.
+  2) You don't need to know everything before moving on!
+  3) As a developer, you NEED to know Javascript.
+  4) By using Javascript, we focus on the most important thing on hand, and we can improve for CSS in the mean time.
+

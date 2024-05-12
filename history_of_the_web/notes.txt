@@ -1,0 +1,31 @@
+WWW vs Internet:
+  1) WWW is the common language that computers speak with.
+  2) A decentralized application.
+
+HTML, CSS and Javascript:
+  1) HTML is the way for us to write text on websites.
+    - Hyperlinks.
+  2) It wasn't tthe prettiest, so CSS and Javascript came in.
+    - CSS makes websites pretty.
+    - Javascript adds interactions.
+  3) In Chrome:
+    - Elements tab is for the HTML.
+    - Style tab is for the CSS.
+    - Console tab is to enter javascript.
+
+Developer Fundamentals II:
+  1) We have multiple web browsers.
+  2) Different browsers need to agree on how to read websites.
+  3) Not only different browsers now but on phones and ipads.
+  4) Use tools that has been developed previously to make it unified.
+
+Developer History:
+  1) JQuery is an outdated technology.
+  2) In the 2000s, LAMP stack.
+    - Linux, Apache Server, MySQL, PHP
+    - Facebook still uses PHP, but PHP is very unpopular already.
+  3) Now, JQuery replaced with React.
+  4) Apache replaced with Node.
+  5) PHP replaced with Node.js and Express.js.
+  6) MySQL replaced with PostgreSQL and MongoDB.
+

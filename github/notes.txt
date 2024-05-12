@@ -1,0 +1,43 @@
+Git + Github Part 1:
+  1) Source control. Allows multiple people to work on one document together.
+  2) Merge conflict. Conflict between 2 differences.
+  3) git add .
+  4) git commit -m ""
+  5) git push
+  6) git status
+  7) git pull
+    - pull the latest version
+
+Github Update: Master --> Main:
+  1) Github has decided to rename the original branch from master to main.
+
+Git + Github Part 2:
+  1) You don't want to make changes directly to production.
+  2) Do changes in branching, test with changes that will not break the main branch.
+  3) git branch (new branch name)
+  4) git checkout (branch name)
+  5) git push --set-upstream origin (branch name). For first time pushing a branch.
+  6) git merge main. Merge the main branch into the branch you are currently working on.
+
+Contributing To Open Source
+  1) Open source software is source code that anyone can inspect, modify and enhance.
+  2) Helps to build portfolio.
+  3) git checkout -b (branch name)
+    - Creates new branch and switches over.
+  4) git diff
+    - See the differences made.
+  5) We can come back to ZTM Open source to build portfolio.
+
+Keeping Your Fork Up To Date:
+  1) git remote add upstream, and then paste the URL you would copy from the original repository if you were to do a git clone.
+  2) git remote -v, to check the configured remote repository.
+  3) git pull upstream master.
+
+Portfolio Website for Recruiters:
+  1) https://alumni-board.netlify.app/
+  2) https://github.com/zero-to-mastery/ZtM-Job-Board
+
+A Typical Day of a Developer
+  1) Break up big task into small manageable task.
+  2) One of the best way to advance in your career, and also improve your knowledge is to help others debug their code.
+  3) 

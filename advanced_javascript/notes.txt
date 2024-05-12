@@ -1,0 +1,363 @@
+Scope:
+  1) Functions have access to variables in the root scope (window).
+
+Advanced Control Flow:
+  1) ternary operator
+    - var variable = condition ? expr1 : expr2;
+    - easier than if else, shorter.
+  2) switch statement
+    - 
+    function moveCommand(direction) {
+      var whatHappens;
+      switch (direction) {
+        case "forward":
+          whatHappens = "You encounter";
+          break;
+        case "back":
+          whatHappens = "You encounter";
+          break;
+        case "right":
+          whatHappens = "You encounter";
+          break;
+        case "left":
+          whatHappens = "You encounter";
+          break;
+      }
+      return whatHappens;
+    }
+
+ES5 and ES6:
+  1) There is nothing static about being a web developer.
+  2) Human nature to want to constantly improve.
+  3) ECMAScript === Javascript.
+  3) ES6 === ECMAScript6.
+  4) let + const
+    - let variable is according to the scope that encloses it.
+    - let is more distinguishing as compared to var. (Use it more!)
+    - const cannot assign to other variables.
+    - const, you can change the properties of the object you just cannot reassign.
+  5) Destructuring
+    - 
+    const obj = {
+      player: 'bobby',
+      experience: 100,
+      wizardLevel: false
+    }
+    const {player, experience} = obj;
+    let {wizardLevel} = obj;
+  6) Object properties.
+    - 
+  7) Template strings.
+    - 
+    const name = "Sally";
+    const age = 34;
+    const greetingBest = `Hello ${name}, you seem to be ${age}`;
+  8) Default arguments;
+    - function greet(name=' ', age=30, pet='cat') {
+        return `Hello ${name}, you seem to be ${age}`;
+      }
+  9) Symbol;
+    - Symbols create completely unique type, never going to be any conflict.
+    - let sym1 = Symbol();
+  10) Arrow Functions
+    - // Normal
+      function add(a, b){
+        return a+b;
+      }
+      // Arrow
+      const add2 = (a,b) => a + b;
+
+Advanced Functions
+  1) Closures
+    - Child scope always has access to the parent scope.
+    - Parent scope doesn't have access to the children scope.
+  2) Currying
+    - more extensible. 
+    const multiply = (a, b) => a * b;
+    const curriedMultiply = (a) => (b) => 3 * b;
+    - To call: curriedMultiply(3)(4);
+  3) Compose
+    - Put 2 functions together to form a third function, where the output of one function is the input of the other.
+    - const compose = (f,g) => (a) => f(g(a));
+      const sum = (num) => num + 1;
+      compose(sum, sum)(5);
+      // 7
+  4) All 3 are used a lot in advanced Javascript.
+  5) Avoiding side effects, functional purity.
+    - Side effects: Functions running within the function that we don't know about.
+    - Functional purity: we always return a value. This returns deterministic, no ambiguity.
+      - Key function in avoiding bugs.
+
+Advanced Arrays
+  1) Map
+    - There's a critical difference between map and foreach.
+    - Foreach is only to iterate, doesn't care the function inside.
+    - Map has a restriction on the operation, expects to return an element.
+    - const mapArray = array.map((num) => {
+        return num * 2;
+      })
+  2) Filter
+    - const filterArray = array.filter(num => {
+        return num > 5;
+      })
+  3) Reduce
+    - A really powerful method.
+    - Concept: 
+    - const reduceArray = array.reduce((accumulator, num) => {
+        return accumulator + num;
+      }, 0);
+      //0 is the initial value.
+      
+Advanced Objects
+  1) Reference type
+    - Non primitive type, not defined by the original programmer.
+    - var object1 = {value:10};
+      var object2 = object1;
+      var object3 = {value:10};
+    - object2 = object1; //true
+    - object3 = object1; //false
+    - Arrays are an object.
+  2) context
+    - Get confused a lot with scope.
+    - Tells you where we are within the object.
+    - 'this': What is the environment that we are in right now.
+  3) instantiation
+  - Making instances or multiple copies of an object.
+  - constructor: prepare all the properties.
+  - class first extends class second: First class to add on top whatever second class has. 
+  - Use super to have access to the class first.
+  - class Player {
+      constructor(name, type) {
+        this.name = name;
+        this.type = type;
+      }
+      introduce() {
+        console.log(`Hi I am ${this.name}, I'm a ${this.type}`)
+      }
+    }
+    class Wizard extends Player {
+      constructor(name, type) {
+        super(name, type)
+      }
+      play() {
+        console.log(`WEEE I'm a ${this.type}`)
+      }
+    }
+    const wizard1 = new Wizard('Shelly', 'Healer');
+
+Pass By Value vs Pass By Reference:
+  1) Discussion about Javascript type.
+  2) Primitive types pass by value.
+    - Pass by value: Copy the value, create the value somewhere else in the memory.
+  3) Objects are passed by reference.
+    - The values are not copied, just referred to.
+    - Any changes in one object will change all object.
+    - Advantage: Save space and memory.
+    - Disadvantage: Changes all properties that are referring to it.
+  4) We can clone to avoid pass by reference (Shallow cloning).
+    - Shallow cloning only clone the first level, if there is a second level that points to another place it will not clone and pass by reference.
+    - let obj = {a: 'a', b: 'b', c: 'c'};
+      let clone = Object.assign({}, obj);
+      let clone2 = {...obj}
+  5) Deep cloning.
+    - This clones everything within (aka: all levels)
+    - let superClone = JSON.parse(JSON.stringify(obj))
+    - Might have performance implications.
+
+Type Coercion
+  1) It's confusing!
+  2) All languages have type coercion.
+  3) Type coercion happens when == is used.
+  4) === is to be explicit with the comparison.
+    - Always use 3 to be safe.
+  5) Object.is
+    - There is -0 and +0.
+    - Similar to === with a few differences.
+
+ES7 (ES2016)
+  1) includes() method.
+    - const pets = ['cat', 'dog', 'turtle']
+      pets.includes('cat');
+  2) exponential operator
+    - const square = (x) => x**2;
+
+ES8 (ES2017)
+  1) String padding
+    - Useful for alignment.
+    - 'Turtle'.padStart(10);
+      '    Turtle'
+    - 'Turtle'.padEnd(10);
+      'Turtle    '
+  2) Trailing commas in functions.
+    - syntactic and makes things look nicer.
+    - const fun = (a,b,c,d,) => {
+        console.log();
+      }
+  3) Object.keys
+  4) Object.entries
+  5) Object.values
+  6) All 3 above changes an object to an array, and we can use all the array functions that have mentioned before for operations.
+
+ES10 (ES2019)
+  1) Every year constantly trying to improve the language.
+  2) flat()
+    - opens all nested arrays and become 1D array.
+    - We can tell them how many layers to flat.
+    - array.flat(2)
+    - can use to clean up data.
+      - const entries = ['bob', 'Sally',,,,,'Cindy'];
+        console.log(entries.flat());
+        // ['bob', 'Sally', 'Cindy']
+  3) flatMap()
+    - flat function and map function.
+  4) trimStart()
+    - trims the start of a string.
+  5) trimEnd()
+    - trims the end of a string.
+  6) fromEntries()
+    - transforms key value pairs into an object.
+    - is the total opposite of entries()
+  7) try catch block
+    - try a piece of code, and catch if there are any errors.
+
+Advanced Loops
+  1) for of loop
+    - for (item of basket) {
+        console.log(item);
+      }
+    - both array and strings are iterable.
+    - object cannot be used for iteration.
+  2) for in loop
+    - works with objects.
+    - loops over the object properties.
+    - objects are for enumerating.
+    - properties of an object are known as enumerable.
+    - array and strings can still be enumerated as they have properties.
+
+ES2020 Part 1
+  1) BigInt
+    - Big Integer
+    - Javascript has a max safe integer. More than that number the calculation will breakdown.
+    - BigInt is to do calculations with number larger than max safe integer.
+    - Not necessarily for big numbers only for small number also can use.
+  2) Optional Chaining Operator ?.
+    - Check properties using the ?. mark.
+    - ?. acts as an if statement to check if the property exists.
+    - let will_pokemon = {
+        pikachu: {
+          species: 'Mouse Pokemon',
+          height: 0.4,
+          weight: 6
+        }
+      }
+      let weight = will_pokemon?.pikachu?.weight;
+      console.log(weight);
+  3) Nullish Chaining Operator ??
+    - || operator checks for true or false.
+    - ?? checks for null or undefined.
+    - let will_pokemon = {
+        pikachu: {
+          species: 'Mouse Pokemon',
+          height: 0.4,
+          weight: 6,
+          power: 'lighting'
+        }
+      }
+
+      let power = will_pokemon?.pikachu?.power ?? 'no power';
+      console.log(power);
+
+ES2021:
+  1) replaceAll()
+    - str.replaceAll('all', 'single')
+    - All words that are 'all' will be replaced with 'single'.
+
+ES2022:
+  1) .at() method
+    - For array and strings.
+    - const arr = [100, 200, 400, 50000, 10]
+      arr.at(-2) //50000
+
+ES2023:
+  1) Arraybian Nights.
+  2) All about arrays in this update.
+  3) .findLast() method
+    - combine filter with finding last item.
+    - array.findLast(item => item.level > 15)
+  4) .findLastIndex() method
+    - find the index of the item in the original array.
+  5) Immutability: not modifying the original list.
+  6) .toReversed() method
+    - when using reverse(), the original list is reversed.
+    - .toReversed() will keep the original and create a new one.
+  7) toSpliced (index, how many items)
+  8).with() method
+    - list.with(index, string to change)
+    - doesn't modify the original list.
+
+Debugging
+  1) Look over code, understand, find why it is not working as expected.
+  2) debugger:
+    - A Javascript keyword.
+    - Gives more details on step by step.
+     
+How Javascript Works
+  1) Explain the difference between asynchronous and synchronous.
+  2) Explain Javascript is a single threaded language that can be non-blocking?
+  3) May need to revisit a few times.
+  4) A program:
+    - Allocate memory.
+    - Parse and execute.
+  5) Memory Heap: storing data.
+  6) Memory Leak:
+    - We have limited amount that we can actually have.
+    - Caused by unused variables that are kept in the memory heap.
+  7) Call Stack: Execute our scripts.
+  8) Javascript has one call stack only.
+    - First In Last Out.
+    - Easy.
+  9) Other languages can be multi threaded.
+    - Might cause problem of deadlocks.
+  10) Synchronous means it will wait for the previous one to finish before executing itself.
+  11) Stack Overflow
+    - a recursion that never ends.
+  12) Javascript can be asynchronous.
+    - setTimeout() function.
+  13) Javascript Run Time environment
+    - Part of the browser.
+    - includes Web APIs, Callback Queue, Event Loop.
+  14) Asynchronous happens a lot.
+
+Modules
+  1) Inline script:
+    - Javascript within the html file.
+    - Lack of reusability.
+    - Pollution of global namespace.
+  2) Script Tags:
+    - Lack of dependency resolution.
+    - Pollution of global namespace.
+  3) IIFE:
+    - Immediately Invoked Function Expression.
+    - Has their own scope.
+    - Reduces the pollution of global namespace.
+  4) browserify:
+    - Uses CommonJS
+    - Is a module bundler.
+    - Compiles all our different JS script into one massive file.
+  5) Modules are building blocks.
+  6) Javascript doesn't have a module system. (Until ES6)
+  7) ES6+Webpack2:
+    - export and import.
+    - Webpack2 is like browserify a module bundler.
+
+How to think like a programmer — lessons in problem solving
+  1) The best way involves:
+    - having a framework
+    - practicing it
+  2) “If you can’t explain something in simple terms, you don’t understand it.” — Richard Feynman
+  3) Steps:
+    - understand
+    - Plan
+    - Divide
+  4) a common pattern amongst successful people is their habit of practicing “micro problem-solving.” 
+  

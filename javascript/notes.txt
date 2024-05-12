@@ -1,0 +1,121 @@
+Introduction To Javascript:
+  1) Just do it! Stick through it!
+
+What Is Javascript?:
+  1) Javascript is the verb in any websites.
+  2) Standard: ECMAScript, same language.
+  3) Javascript is evolving.
+  4) Javascript is a file that you can write instructions for applications.
+
+Your First Javascript:
+  1) String:
+    - Use '' or ""
+    - IF there are ' in your sentence, use \'
+      Example: 'This isn't very nice!' error, 'This isn\'t very nice!' correct.
+  2) Ideally keep actions between like types.
+  3) NaN: Not a number.
+  4) Equal: ===, Not Equal: !==
+
+Variables:
+  1) Helps to capture values.
+  2) Variables cannot start with numbers or signs, can start with letters.
+  3) Camel case: firstName.
+  4) prompt(String).
+    - A pop up is shown to enter details.
+    - Automatically saves any details as String.
+  5) Change String to Number:
+    - Number(string_variable_name);
+  6) alert(variable_name).
+    - pop up without any space to enter.
+  7) semicolon means the end of expression.
+  8) Variables can hold anything.
+  9) Undefined means the variable has not been assigned anything.
+
+Control Flow:
+  1) Conditional execution.
+  2)
+  if (condition) {
+    //code block;
+  }
+  else {
+    //code block;
+  }
+
+Javascript On Our Webpage:
+  1) Javascript like CSS is just a file.
+  2) script.js.
+  3) You can have multiple scripts to run in one html file.
+  4) script in <head> delays what user's see, instead put it at the bottom of <body>.
+
+Functions
+  1) Hardest part of Javascript.
+  2) alert(), prompt() are all functions.
+  3) One, we can use the preset. Two, we can create our own.
+  4) () means calling a function.
+  5) Inside of () are called arguments, given to functions.
+  6) Functions make life easier by bundling up all operations.
+  7) function name() {}
+  8) var a = function name() {}
+  9) Concept with developers: DRY (Do not repeat yourself)
+  10) Arguments help us not to repeat ourselves with operations.
+  11) Nice to have a return to know the function is working properly.
+    - It's the final operation in a function and exits after it.
+    - The core of Javascript.
+
+Data Structures: Arrays
+  1) Data structures are like compartment holders.
+  2) Store information and access it in a way useful to us.
+  3) Any type is fine, numbers, booleans, function list, even mixing it together.
+  4) Mixing is NOT advised, it will cause performance issue.
+  5) list.shift(), shift everything to the left, remove list[0].
+  6) list.pop(), remove the last one.
+  7) list.push(), add to the last one.
+  8) list.concat(), concatenate 2 arrays together, but does not change the original list.
+  9) Refer to W3C for the functions for arrays. 
+
+Data Structures: Objects
+  1) A Javascript type.
+  2) A collection of properties.
+  3) Object has both properties and values.
+  4) You can have different types in an object.
+  5) A function inside an object is known as method.
+  6) An object can be empty and not undefined.
+  7) Null is a special type.
+    - Means there is nothing in this object.
+
+Javascript Terminology
+  1) Function declaration and function expression.
+  2) Expression denotes a value.
+  3) Function vs method:
+    - function thisIsAFunction() {};
+      thisIsAFunction();
+    - var obj = { thisIsAMethod: function() {} };
+      obj.thisIsAMethod();
+
+Loops:
+  1) for();
+    // for (var i=0; i<todosLength; i++) {
+    //   todos.pop();
+    // }
+  2) while();
+    // var counterOne = 0;
+    // while (counterOne < 10) {
+    //   console.log(counterOne);
+    //   counterOne++;
+    // }
+  3) do while();
+    // var counterTwo = 10;
+    // do {
+    //   console.log(counterTwo);
+    //   counterTwo--;
+    // } while (counterTwo > 0);
+  4) forEach();
+    - Simplifies the function.
+    // todos.forEach (function(todo, i) {
+    //   console.log(todo, i);
+    // })
+
+Javascript Keywords:
+  1) There are specific words that already has functions bounded to them.
+  2) Javascript keywords are words that cannot be used to define.
+  3) 

@@ -1,0 +1,40 @@
+All about efficiency.
+Course is updated monthly!
+Nobody is born a developer, we all started from zero.
+Learn to think like a programmer.
+
+Course Outline:
+Part One (Frontend):
+  1) Introduction: Web Foundations
+  2) HTML5: Building our first website.
+  3) CSS3: Style our website and make them beautiful.
+  4) Bootstrap Templates: Building our own page and accepts emails.
+  5) CSS Grid: Newer features of CSS. Responsive layouts.
+  6) Career of Developer: Understanding differences between Software Engineer, Software Developer, Mobile Developer, etc.
+
+Part Two (Frontend):
+  1) Javascript: Real and most used programming language. DOM Manipulation, create actions and interactions.
+  2) Developer Environment: Command line and IDE.
+  3) Git and Github: Most important tools of developer.
+  4) NPM/NPM Scripts: Way for developer to share codes.
+  5) Create our own portfolio consisting of projects.
+  6) React.js: Library for companies to build fast and scalable applications.
+
+Part Three (Backend):
+  1) HTTP, JSON and AJAX
+  2) Backend basics.
+  3) Node.js
+  4) API
+  5) Databases: PostgreSQL, MongoDB
+  
+SmartBrain (Project):
+  1) Work on a project called SmartBrain.
+  2) It is a face recognition app.
+  3) Production: How to deploy a real life app that is secure and won't get hacked.
+
+#html-and-css
+#github
+#javascript
+#react
+#node-and-deno
+#databases

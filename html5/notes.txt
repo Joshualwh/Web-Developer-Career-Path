@@ -1,0 +1,63 @@
+Build Your First Website:
+  1) Format that every HTML file must follow
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>WOW</title>
+      </head>
+      <body>
+        <h1>Yo this shit dope</h1>
+      </body>
+    </html>
+  2) When we move the html file from folder to browser. Similar to what the in production websites do when they copy from server to browser.
+
+Developer Fundamentals III:
+  1) As a Developer you are going to be googling a lot.
+  2) DOCTYPE tells the browser this file is going to use HTML5.
+  3) Can search in w3schools.
+  4) Senior developers understand all the meaning behind things they do.
+
+HTML Tags:
+  1) There's a ton of HTML Tags! 
+  2) Anything that has a syntax is a tag.
+  3) h1 tag:
+    - <h1></h1>
+    - this is a header.
+    - it can go up to <h6></h6>.
+  4) p tag:
+    - it is a paragraph tag.
+    - paragraphs show up nicely as compared to just paragraph without tags.
+  5) Some phones do not have the ability to do bold or italicize.
+    - instead of <b></b>, we use <strong></strong>.
+    - instead of <i></i>, we use <em></em>.
+  6) Tags involve over time.
+  7) Ordered list: <ol></ol>.
+  8) Unordered list: <ul></ul>.
+  9) List items: <li></li>.
+  10) You can have nested list items as well.
+    - <ol>
+        <li>Bana</li>
+        <li>Appl</li>
+        <li>Blah</li>
+        <ul>
+          <li></li>
+        </ul>
+      </ol>
+
+Self Closing HTML Tags:
+  1) Line Break: <br>
+  2) Horizontal Line: <hr>
+  3) Image: <img src="" alt="">
+
+Anchor Tag:
+  1) The power of html is the ability to link to other documents.
+  2) <a href=""></a>
+
+Q&A index.html:
+  1) Why index.html?
+    - Normally more than 1 html files.
+    - The first html to return is always index.html.
+    - Is a common practice.
+
+Q&A Relative vs Absolute Path:
+  1) 

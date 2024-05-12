@@ -1,0 +1,56 @@
+Introduction To NPM:
+  1) Share JS code they have written.
+  2) Creates a great knowledge base.
+  3) You don't have to code everything from scratch by yourself.
+  4) Search for packages in the NPM registry.
+  5) Packages include: package.json file + js file.
+  6) Not guaranteed that all packages are good code.
+  7) Yarn
+    - A tool to grab things from the NPM registry.
+    - Will not be discussed in this course.
+    - Very similar to NPM.
+  8) NPM (Node Package Manager)
+  9) 3 must do things in a project:
+    - HTML + CSS + Javascript
+    - Github Repo + Github
+    - Package.json file
+
+Setting Up NPM and package.json:
+  1) Node allows us to run Javascript outside of the browser.
+  2) npm init, anytime you want to start a project.
+  3) JSON is a file format.
+    - With this comes a lot of power!
+
+Installing And Using Packages:
+  1) 2 packages recommendation
+    - live-server
+    - lodash
+  2) npm allows installation globally or locally.
+    - globally install (in the computer), will include -g.
+  3) live-server creates a live server for you, automatically update changes.
+    - Computer acts as a server.
+  4) lodash is like an extension of Javascript.
+  5) Be careful with adding and downloading packages to the project!
+  6) Need to take care of the dependencies of our projects now.
+  7) semver: Semantic Versioning.
+    - "^4.17.21"
+      - 21 is a bug fix.
+      - 17 is a minor release.
+      - 4 is a major release.
+  8) NEVER put your node modules into the github repo!
+  9) devdependencies:
+    - Only for development and testing.
+    - will never be shipped to the website for end users.
+  10) npm run test
+  11) npm scripts allow you to do commands from the json file.
+
+Why Update Packages?:
+  1) Libraries are constantly evolving.
+  2) Keep our projects as updated as possible.
+  3) Github will show security alerts.
+
+Exercise: Create A Portfolio:
+  1) scss. 
+    - Kinda like css but gives you extra features, a superset of CSS. 
+    - known as SASS.
+  2) saves variables for the values to use in the project.

@@ -1,0 +1,35 @@
+Evolving Technology:
+  1) Technology is moving so fast that you can catch up easily.
+  2) Life of a developer: You are a problem solver.
+
+Bootstrap:
+  1) CDN: Content delivery network.
+
+Bootstrap 5 Update:
+  1) Libraries, tools are constantly updated.
+  2) It's always a better choice to update to the latest package.
+
+Bootstrap Grid:
+  1) Layout was difficult and bootstrap was easier for layout using containers.
+
+Exercise: Startup Landing Page.
+  1) Responsive.
+  2) meta tag:
+    - Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+  3) viewport: 
+    - The viewport is the user's visible area of a web page.
+    - gives the browser instructions on how to control the page's dimensions and scaling.
+  4) CSS Grid, another easy way to do layout.
+  5) Vertical alignment using inline, inline-block, inline-element is not the recommended way.
+  6) Use flex instead.
+
+Exercise: Adding Email Subscribe Form With MailChimp
+  1) Email marketing services.
+  2) Online websites tend to change their looks frequently. 
+
+DEVELOPER FUNDAMENTALS: IV
+  1) When building website is very rare that we build from scratch.
+  2) Be efficient with your time and resources.
+  3) Leverage other people website templates.
+  4) The web allow programmers to share pieces of code.
+

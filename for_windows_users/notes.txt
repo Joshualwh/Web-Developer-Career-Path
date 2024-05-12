@@ -1,0 +1,5 @@
+Install PostgreSQL for Windows:
+  1) psql -U Postgres
+
+Using PSQL and PGADMIN:
+  1) 

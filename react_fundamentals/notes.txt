@@ -1,0 +1,134 @@
+Introduction To React.js:
+  1) Development becomes faster with the use of tools.
+  2) Very reliable and consistent.
+  3) Make websites easy to scale.
+  4) VR apps, mobile apps etc.
+  5) Think of website different parts as components.
+  6) The idea of components makes react amazing.
+  7) One way data flow.
+    - Top to bottom, never the other way around.
+    - Creates bug free code.
+  8) Virtual DOM.
+    - React helps to do DOM Manipulation.
+  9) React has a great ecosystem.
+
+Create React App:
+  1) npx create-react-app react-app
+  2) npx is a package runner
+
+React + Vite:
+  1) Alternative to using create-react-app.
+  2) Vite.
+    - Super fast in deployment.
+  3) npm create vite@latest
+    - Name the project.
+    - Choose framework.
+    - Choose variant.
+  4) At the end of the day is how we use the tools.
+
+React App Folder Structure:
+  1) package-lock.json makes sure that we can run the project anywhere.
+  2) .gitignore, a dot file is a configuration file.
+  3) Important! <div id="root"></div> in index.html
+    - Where React grabs onto the html page.
+  4) Programmers work on the src folder, contains the logic.
+
+React 18 Update:
+  1) Stay on top of changes.
+  2) Difference of versions is in the package.json file.
+  3) ReactDOM.render -> ReactDOM.createRoot(document.getElementById('root')).
+
+React Fundamentals 2:
+  1) Focus on index.js and app.js.
+  2) Using HTML like syntax plus creating our own custom JSX.
+  3) Work within the src folders.
+
+Hooks vs Classes:
+  1) Many ways to build react components.
+  2) Newer ways are to use hooks.
+    - Very specific to React!
+  3) Classes is part of Javascript, more widespread used.
+  4) Start with classes, then learn hooks.
+
+Class vs Functional App.js:
+  1) Functional components.
+  2) Default App.js file when React first started was using class.
+  3) All the magic is from the React.Component.
+
+Your First React Component:
+  1) React allows to import css for different components.
+  2) ./ means in the same directory.
+  3) If there is no .css behind, it will think is js by default.
+  4) When you build a component standard it will capitalize the first letter.
+  5) Always have a render() function.
+  6) Tachyons
+    - Similar to bootstrap predefined class names.
+    - Easier css configuration.
+  7) React: Better to have functionality and styles per component.
+    - Each component is it's own separate universe.
+  8) JSX is just similar to not entirely using html tags.
+  9) We can add props or properties within a component.
+  10) We are just creating functions (which are class/components) that has parameters.
+
+Building A React App 1:
+  1) Remember we are writing JSX not HTML!
+  2) return can only return ONE thing.
+  3) To make it dynamic you will need props.
+  4) For ones that do not have a default export, need to include {} in import.
+    - Known as destructuring.
+  5) With React 16.2, introduced Fragment.
+
+The Dirty Little Secret To Become An Expert:
+  1) The people that know the tools the best are the people that create it.
+  2) To be like that, the best way is to read the documentation!
+  3) Reading documentation and test it out is the best way to become the expert.
+  4) <StrictMode> lets you find common bugs in your components early during development.
+
+Building A React App 3:
+  1) Props never change, they are inputs and we never modify them.
+  2) State, an object the provides description of your app.
+    - Able to change the value of the input.
+  3) Props are things that come out of state.
+  4) Rule of thumbs always use the arrows when writing a function.
+  5) Any component that has state uses the class syntax.
+  6) State is what changes in an app.
+
+Styling Your React App:
+  1) .woff, is a font file.
+
+Building A React App 4:
+  1) Normally, we would use something like API.
+  2) Smart components tend to have class syntax.
+  3) Life cycle hooks.
+  4) Mounting is the start of the app.
+  5) Updating, whenever the component changes.
+  6) Unmounting, component is removed from the page.
+  7) Fetch is a method of the window object.
+  8) If fetch api was very slow, you can put an if statement to show loading screen.
+
+Building A React App 5:
+  1) React is good because it can create components that are reusable.
+  2) After props, state, one last one is children.
+  3) props.children can be used to wrap other components.
+  4) JSX add styles using double curly brackets.
+    - Javascript expression
+    - Within it is an object.
+  5) need to camelCalse for JSX.
+
+Building A React App 6:
+  1) Folder structure is important!
+  2) npm run build will optimize the package and create a new one.
+
+Keeping Your Projects Up To Date:
+  1) npm audit fix 
+  2) npm audit
+    - Helps to review the needed updates.
+  3) Need to fix all the vulnerabilities.
+  4) Last check with running npm start.
+  5) The more dependencies the more maintenance needed.
+  6) Easiest way to keep projects up to date is to simply update the package.json file.
+
+Error Boundary In React:
+  1) componentDidCatch() lifecycle hook.
+  2) Error boundaries are useful when you put it into production.
+  3) During development, React will point to you where the error is directly.

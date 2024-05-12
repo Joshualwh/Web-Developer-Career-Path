@@ -1,0 +1,33 @@
+Browsing the Web
+  1) Browser -> Internet Server Provider(ISP) -> DNS
+  2) DNS -> ISP -> Browser, provides an IP Address
+  3) With IP Address, sends another request accordingly to servers.
+  4) Server will send the files back to browser.
+
+The Internet Backbone
+  1) https://www.submarinecablemap.com/
+  2) At the more important ends are all connected through cables.
+  3) Internet is all these connected computers transferring files between each other.
+
+Traceroute
+  1) Linux: Traceroute
+  Windows: Tracert. Ex: tracert -4 google.com
+  2) Windows has two command shells:
+  Command Prompt/Shell: their legacy shell abbreviated as CMD
+  PowerShell: their better shell
+  3) MacOS and Linux use a different command shell:
+  BASH (Bourne Again Shell)
+
+Developer Fundamentals I:
+  1) How to make the website faster?
+    - Location of server
+    - How many trips
+    - Size of files
+
+What Does a Developer Do?
+  1) Front End Developer
+    - What a user sees
+    - HTML, CSS, Javascript + React
+  2) Back End Developer
+    - Server, Node.js, Express.js
+    - Database, PostgreSQL

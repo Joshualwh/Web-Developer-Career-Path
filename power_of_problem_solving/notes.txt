@@ -1,0 +1,14 @@
+Snapshot Model of Learning:
+  1) People pay you money to provide solutions to questions that aren't going to be easily found online.
+  2) Not just build an app, but also to maintain an app.
+  3) APIs are notorious for constantly changing how they work.
+
+Deliberate Practice:
+  1) Learning process should be tough.
+  2) Temporary frustration is a good thing.
+  3) Eventually we hit a plateau.
+  4) Deliberate practice comes in when we hit the plateau.
+  5) Specific goal -> Intense focus -> Immediate feedback -> Frequent discomfort.
+  6) Demands near max effort, and is NOT enjoyable.
+  7) The dip, we might encounter some things that might not help us towards our goal.
+  8) The most effective and most powerful types of practice in any field work by harnessing the adaptability of the human body and brain to create, step by step, the ability to do things that were previously not possible.

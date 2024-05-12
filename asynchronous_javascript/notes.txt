@@ -1,0 +1,94 @@
+HTTP/HTTPS:
+  1) Hyper Text Transfer Protocol.
+  2) Protocol: Standard that everyone follows.
+  3) A common language that the client and the server can communicate.
+  4) Front End Applications: HTML, CSS, Javascript, React.
+  5) Request and Response.
+    - Request: Client to server.
+    - Response: Server to client.
+  6) Request:
+    - GET: Get data.
+    - POST: Add new data.
+    - PUT: Update data.
+    - DELETE: Delete data.
+  7) Response:
+    - HTTP Messages (Status).
+    - Data.
+  8) Query string.
+    - Sends data to the server through GET.
+  9) Send information to a body using POST.
+    - Instead of query string, it becomes form data.
+  10) Query string and form data can be easily hacked.
+  11) Solution is to use HTTPS.
+    - Hyper Text Transfer Protocol Secure.
+    - Encrypted.
+    - Uses Transport Layer Security. (TLS)
+
+JSON:
+  1) When exchanging data between a browser and server, the data can only be text.
+    - Text can be understood by all.
+  2) Server can use any type of language including Python, Go, PHP.
+  3) Javascript Object Notation.
+  4) Used to send data between machines.
+  5) XML can be used as well.
+    - HTML like syntax.
+    - Not that efficient.
+  6) JSON is more succinct way that saves bandwidth and improves response time.
+  7) JSON can be read by any language.
+  8) JSON.parse()
+    - takes a JSON string and then transforms it into a JavaScript object.
+  9) JSON.stringify()
+    - takes a JavaScript object and then transforms it into a JSON string.
+
+AJAX:
+  1) In the past, when there are changes, the whole webpage refresh.
+    - Poor user experience.
+    - Wasteful of resources.
+  2) Refresh the page only the parts that needs to refresh.
+  3) A method of combining pieces together.
+  4) Fetch is the newest way.
+  5) Quicker, less data bandwidth needed.
+  6) XMLHttpRequest.
+  7) Single page application.
+  8) Promise: represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+  9) Fetch comes with it's own method.
+    - response.json()
+  10) AJAX is a combination of Fetch API, HTTP, JSON.
+
+Promises:
+  1) An object that may produce a single value some time in the future.
+  2) 3 possible states: Fulfilled, rejected or pending.
+  3) .catch catches any error that happens between the chains.
+  4) A promise has both a resolve and reject.
+  5) Promises are good for asynchronous programming.
+  6) Promise.all()
+    - Waits for all the promises to be resolved before continuing.
+  7) Promises can only succeed or fail once.
+
+ES8 - Async Await:
+  1) Built on top of promises.
+  2) An async function is a function that returns an Promise.
+  3) Big benefit, makes code easier to read, look more synchronous.
+  4) try catch block.
+    - catch must receive an error.
+    - try {} catch (error) {};
+
+ES9 (ES2018):
+  1) Object spread operator (...).
+    - function sum(a,b,c);
+      sum(...array)
+  2) finally
+    - do something finally after the promise has finished.
+    - will be called regardless the promise resolves or rejects.
+  3) for await of
+    - loop through the async await.
+    - An array of promises is iterable, able to be looped.
+
+ES2020: allSettled():
+  1) Promise.all only resolves if all promises resolve within.
+  2) Promise.allSettled()
+    - doesn't care about resolve or reject.
+    - waits until all promises are returned.
+
+ES2021: any():
+  1) whichever resolves first is taken by Promise.any().
