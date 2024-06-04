@@ -1,0 +1,63 @@
+Introduction To Databases:
+  1) Database to store data.
+  2) Data can have many forms.
+  3) DBMS: Database Management System.
+  4) PostgreSQL
+    - Relational Databases.
+    - Consist of 2 or more tables.
+    - Schema: Relation between the table rows.
+    - Schema needs to be first defined.
+    - Using SQL to communicate between node server and database.
+      - like http between frontend and node servers.
+  5) MongoDB
+    - Non Relational Database (NoSQL).
+    - Don't need to define the schema.
+    - Offer a greater flexibility.
+    - Document oriented.
+    - It's own query language: MongoDB query
+      - like http between frontend and node servers.
+  6) Depends on your need on which database to use.
+
+Installing PostgreSQL:
+  1) psql -U postgres
+    - -U means user.
+  2) password: 9 characters.
+  3) createdb -U postgres test: creates a database.
+  4) CREATE TABLE users (id SERIAL PRIMARY KEY, name VARCHAR(255), email VARCHAR(255));
+  5) \dt: display tables.
+  6) INSERT INTO users (name, email) VALUES ('john', 'john@doe.com');
+  7) SELECT * FROM users;
+  8) CREATE TABLE users (name text, age smallint, birthday date);
+  9) \q: exits sql to terminal.
+
+SQL: Alter Table + Update:
+  1) ALTER TABLE users ADD score smallint;
+  2) UPDATE table_name
+     SET some_column = some_value
+     WHERE some_column = some_value;
+  3) AND OR functions the same as Javascript.
+
+SQL: Conditional Selections:
+  1) SELECT * FROM users WHERE name LIKE 'A%';
+    - LIKE is the conditional selection.
+    - % behind A means anything that starts with A.
+    - It is case sensitive.
+  2) SELECT * FROM table_name WHERE some_column LIKE '%y';
+  3) SELECT * FROM table_name ORDER BY some_column DESC;
+  4) SELECT * FROM table_name ORDER BY some_column ASC;
+
+SQL: Functions:
+  1) SELECT AVG(some_column) FROM table_name;
+  2) SELECT SUM(some_column) FROM table_name;
+  3) SELECT COUNT(some_column) FROM table_name;
+
+Joining Tables:
+  1) CREATE TABLE login (ID SERIAL NOT NULL PRIMARY KEY, Secret VARCHAR(100) NOT NULL, Name text UNIQUE NOT NULL);
+  2) Most important is the idea of schemas.
+  3) We don't want 1 massive table with all the data.
+    - It is a lot slower and difficult to manage.
+  4) SELECT * FROM table_name_1 JOIN table_name_2 ON table_name_1.name = table_name_2.name;
+
+SQL: Delete From + Drop Table:
+  1) DELETE FROM table_name WHERE some_column = some_value;
+  2) DROP TABLE table_name;

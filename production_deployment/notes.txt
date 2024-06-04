@@ -1,0 +1,48 @@
+Deploying Our Files:
+  1) Use Heroku to have another server.
+  2) Backend code on a computer dedicated as a server.
+  3) AWS, Google Cloud, Microsoft Azure, etc.
+  4) Deploy node code to Heroku.
+  5) Production to Deployment: Move code from our computer to another computer that are dedicated.
+
+Code Review:
+  1) Your code can always be improved!
+
+Security Review:
+  1) Need to have a few layers of validation.
+  2) Server never trusts anything received from the front end, do it's own validation.
+
+Optional: Using gRPC API:
+  1) REST to gRPC API is a drastic change.
+  2) gRPC is quite rare to see.
+  3) gRPC: Google Remote Procedure Call.
+    - Faster way.
+  4) REST universal support.
+
+Environment Variables:
+  1) The server that is running on has it's own variables.
+  2) Inject those variables into specific places within a file.
+  3) In bash:
+    PORT=3000 node server.js
+  4) Important for things that should be kept secret.
+  5) In fish:
+    env DATABASE_URL='hello' node server.js
+
+Alternatives to Heroku:
+  1) Read documentation of the service you want to use.
+  2) Use their dashboard to deploy your app.
+  3) Frontend:
+    - Github Pages
+    - Netlify
+  4) Backend/Database:
+    - https://fly.io/
+    - https://render.com
+    - https://railway.app
+    - https://cyclic.sh
+    - https://supabase.com/
+  5) https://medium.com/@vanessavun/migrating-your-full-stack-react-app-from-heroku-to-render-9d7901d42e85
+
+Deploying On Heroku:
+  1) DevOps focuses on this domain.
+  2) Don't put anything sensitive in the code base. Put it in environment variable.
+  
